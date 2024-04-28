@@ -56,6 +56,13 @@ $ npm run start:dev
     - **Description:** This API retrieves the balances in all currencies for the user's account.
     - **Response:** `{ "balances": { "USD": 1000, "EUR": 500, "GBP": 300 } }`
 
+## Testing
+
+```bash
+# Running all unit test for each Functionality - runs all files ending with '.spec.ts'
+$ npm test
+```
+
 ## About me
 Machine Learning Wizard and Web Developer who is fascinated by AGI & Finance! Committed to shipping high-quality code in DL, LLMs, Quantum computing,CV & AR/VR!
 - [Github](https://github.com/NandanHemanth)
