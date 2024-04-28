@@ -11,6 +11,6 @@ import { FxConversionController } from './fx-conversion.controller';
 @Module({
   imports: [AccountsModule, HttpModule], // Modules that provide metadata used to organise application structure
   controllers: [FxRatesController, FxConversionController], // Controllers used for  handling incoming requests, outgoing responses and route management
-  providers: [FxRatesService, FxConversionService], // Service which handle the core functionality of the incoming requests
+  providers: [FxRatesService, FxConversionService], // Service which handle the core functionality & business logic of the incoming requests
 })
 export class AppModule {}
