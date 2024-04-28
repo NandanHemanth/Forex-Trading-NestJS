@@ -15,7 +15,7 @@ export class FxRatesService {
   private async fetchRates() {
     try {
       const response = await lastValueFrom(
-        this.httpService.get(`https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=USD&to_symbol=EUR&apikey=${this.apiKey}`),
+        this.httpService.get(`https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_symbol=USD&to_symbol=EUR&apikey=${this.apiKey}`),
       );
     //   console.log(response.data)
 
