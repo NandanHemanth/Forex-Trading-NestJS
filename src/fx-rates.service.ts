@@ -9,7 +9,7 @@ export class FxRatesService {
 
   constructor(private httpService: HttpService) {
     this.fetchRates();
-    setInterval(() => this.fetchRates(), 300000); // Fetch new rates every 30 seconds
+    setInterval(() => this.fetchRates(), 30000); // Fetch new rates every 30 seconds
   }
 
   private async fetchRates() {
@@ -27,7 +27,7 @@ export class FxRatesService {
       const latestRate = data[Object.keys(data)[0]];
       const rate = parseFloat(latestRate['4. close']); 
 
-      const expiresAt = Date.now() + 300000; // Expire in 30 seconds
+      const expiresAt = Date.now() + 30000; // Expire in 30 seconds
 
       this.rates['EUR'] = {
         rate,
