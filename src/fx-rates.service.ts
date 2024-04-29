@@ -17,7 +17,7 @@ export class FxRatesService {
       const response = await lastValueFrom(
         this.httpService.get(`https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_symbol=USD&to_symbol=EUR&apikey=${this.apiKey}`),
       );
-    //   console.log(response.data)
+      console.log(response.data)
 
       const data = response.data['Time Series FX (Daily)'];
       if (!data) {
